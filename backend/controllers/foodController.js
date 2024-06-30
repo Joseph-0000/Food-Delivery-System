@@ -1,7 +1,7 @@
 import foodModel from "../models/foodModel.js";
 import fs from 'fs'
 
-//add food
+//add food item
 const addFood = async (req,res) => {
 
     let image_filename = `${req.file.filename}`;
@@ -21,7 +21,6 @@ const addFood = async (req,res) => {
         console.log(error)
         res.json({success: false, message: "Error:"})
     }   
-
 }
 
 // all food list
