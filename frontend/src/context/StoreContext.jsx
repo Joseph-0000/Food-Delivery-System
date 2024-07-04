@@ -73,10 +73,6 @@ const StoreContextProvider = (props) => {
         setToken,
     }
 
-    useEffect(()=>{
-        console.log(cartItems);
-    },[cartItems])
-
     return (
         <StoreContext.Provider value={contextValue}>
             {props.children}
